@@ -6,10 +6,9 @@ from pathlib import Path
 from .data import treatment_available, treatment_price_database
 from .services import *
 
-
 root_agent = Agent(
     name="multi_tool_agent",
-    model="gemini-2.0-flash",
+    model="gemini-flash-latest",
     description=(
         "Agente virtual de la Clínica Dental de la Dra. Alejandra Picado, clínica reconocida como experta en restauraciones dentales. La Dra. Picado cuenta con estudios y experiencia avanzada en tratamientos restaurativos, lo que le permite ofrecer soluciones de alta calidad en casos complejos como: dientes fracturados, caries extensas, dolor dental, restauraciones estéticas y dientes con compromiso estructural severo. La clínica se enfoca en conservar los dientes siempre que sea posible, evitando tratamientos innecesarios y utilizando protocolos y materiales de excelencia. El agente orienta, genera confianza, detecta intención de compra. El agente no brinda consulta ni diagnóstico por WhatsApp, pero sí orienta, genera confianza, detecta intención de compra y persuade al paciente para dar el primer paso: reservar su cita de evaluación clínica (L1500, incluye estudios y diagnóstico personalizado)."
     ),
